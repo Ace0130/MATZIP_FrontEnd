@@ -1,14 +1,71 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 30px 20px;
+  padding: 30px 100px;
+}
+.header .searchBar {
+  display: flex;
+  width: 400px;
+  padding: 10px 14px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.header .searchBar input {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.header .searchBar button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 .header .btnContainer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
   width: 300px;
+}
+.header .btnContainer .loginBtn {
+  border: 2px solid black;
+  background-color: white;
+  outline: none;
+  border-radius: 18px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.header .btnContainer .loginBtn:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.header .btnContainer .profileBtn {
+  background-color: lightgray;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 9999px;
+  outline: none;
+  cursor: pointer;
+}
+.header .btnContainer .profileBtn:hover {
+  background-color: darkgray;
+  transition: background-color 0.5s;
+}
+.header .btnContainer .favoritesBtn {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  color: #e31b23;
+  outline: none;
+}
+.header .btnContainer .favoritesBtn:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.header .btnContainer .favoritesBtn svg {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=Header.css.map */

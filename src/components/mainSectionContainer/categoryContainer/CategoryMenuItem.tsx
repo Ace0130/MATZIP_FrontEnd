@@ -4,14 +4,13 @@ interface Image {
   large_cover_image: string;
 }
 
-interface CategoryMenuItemProps {
+interface Props {
   img: Image;
-  idx: string;
 }
 
-const CategoryMenuItem = ({ img, idx }: CategoryMenuItemProps) => {
+const CategoryMenuItem = ({ img }: Props) => {
   return (
-    <div key={idx} className="categoryMenuItemContainer">
+    <div>
       <img
         className="categoryMenuItem"
         src={img.large_cover_image}
