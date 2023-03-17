@@ -1,0 +1,18 @@
+.categoryMenuLabel {
+  display: inline-block;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.categoryMenuContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 80px;
+}
+.categoryMenuContainer .categoryMenuItemContainer {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=CategoryMenuContainer.css.map */

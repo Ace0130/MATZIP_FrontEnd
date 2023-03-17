@@ -1,0 +1,20 @@
+.searchBar {
+  display: flex;
+  width: 400px;
+  padding: 10px 14px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.searchBar input {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.searchBar button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=SearchBar.css.map */

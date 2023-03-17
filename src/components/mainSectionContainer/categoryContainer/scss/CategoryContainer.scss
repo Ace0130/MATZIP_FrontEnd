@@ -1,0 +1,14 @@
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+
+  .categoryLabel {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .categoryBtnContainer {
+    display: flex;
+  }
+}

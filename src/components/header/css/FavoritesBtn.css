@@ -1,0 +1,17 @@
+.faHeart {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin: 10px;
+  color: #e31b23;
+  outline: none;
+}
+.faHeart:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.faHeart svg {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=FavoritesBtn.css.map */
