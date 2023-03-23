@@ -1,16 +1,11 @@
-import { ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./header/Header";
 
-interface Props {
-  section: ReactNode;
-}
-
-const Layout = ({ section }: Props) => {
+const Layout = ({ children }: any) => {
   return (
     <div>
       <Header />
-      {section}
+      {children}
       <Footer />
     </div>
   );

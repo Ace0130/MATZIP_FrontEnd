@@ -1,5 +1,11 @@
+import Layout from "../components/Layout";
+
 const Login = () => {
-  return <div>로그인</div>;
+  return (
+    <Layout>
+      <div>로그인</div>
+    </Layout>
+  );
 };
 
 export default Login;
