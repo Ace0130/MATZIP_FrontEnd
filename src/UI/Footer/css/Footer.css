@@ -1,0 +1,32 @@
+.footer {
+  background-color: grey;
+  width: "auto";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .Copyright {
+  font-size: medium;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.footer .FrontDeveloper {
+  font-size: medium;
+  margin-bottom: 5px;
+}
+.footer .BackDeveloper {
+  font-size: medium;
+  margin-bottom: 5px;
+}
+.footer .Github {
+  font-size: medium;
+  text-align: right;
+  margin-bottom: 5px;
+}
+.footer .PersonalPrivate {
+  font-size: medium;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=Footer.css.map */
