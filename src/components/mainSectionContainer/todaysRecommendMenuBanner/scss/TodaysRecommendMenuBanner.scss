@@ -1,0 +1,32 @@
+.todaysRecommendMenuBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+  }
+
+  .imgChangeBtnContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    button {
+      background-color: lightgray;
+      border: none;
+      border-radius: 9999px;
+      padding: 10px;
+      margin: 10px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .enabled {
+      background-color: blue;
+    }
+  }
+}

@@ -1,4 +1,8 @@
 .mainSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   padding: 30px 100px;
 }
 

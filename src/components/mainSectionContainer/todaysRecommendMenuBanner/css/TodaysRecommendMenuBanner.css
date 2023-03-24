@@ -1,0 +1,30 @@
+.todaysRecommendMenuBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todaysRecommendMenuBanner img {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+.todaysRecommendMenuBanner .imgChangeBtnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.todaysRecommendMenuBanner .imgChangeBtnContainer button {
+  background-color: lightgray;
+  border: none;
+  border-radius: 9999px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.todaysRecommendMenuBanner .imgChangeBtnContainer .enabled {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=TodaysRecommendMenuBanner.css.map */
