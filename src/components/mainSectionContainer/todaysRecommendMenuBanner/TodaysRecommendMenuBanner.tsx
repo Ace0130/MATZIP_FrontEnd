@@ -58,20 +58,20 @@ const TodaysRecommendMenuBanner = () => {
   return (
     <div className="todaysRecommendMenuBanner">
       {foods.length > 0 && (
-        <div>
+        <>
+          <label>오늘의 인기 메뉴</label>
           <img src={foods[imgIdx].background_image} alt="배너 이미지" />
-          <div>{imgIdx}</div>
-        </div>
+          <div className="imgChangeBtnContainer">
+            {foods.map((food, imgIdx) => (
+              <button
+                key={imgIdx}
+                id={`btn${imgIdx.toString()}`}
+                onClick={changeImg}
+              ></button>
+            ))}
+          </div>
+        </>
       )}
-      <div className="imgChangeBtnContainer">
-        {foods.map((food, imgIdx) => (
-          <button
-            key={imgIdx}
-            id={`btn${imgIdx.toString()}`}
-            onClick={changeImg}
-          ></button>
-        ))}
-      </div>
     </div>
   );
 };
