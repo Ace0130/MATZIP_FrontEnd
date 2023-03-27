@@ -1,12 +1,10 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import LoginSectionContainer from "../components/LoginSectionContainer/LoginSectionContainer";
 
 const Login = () => {
   return (
     <Layout>
-      <div>
-        <LoginSectionContainer />
-      </div>
+      <LoginSectionContainer />
     </Layout>
   );
 };

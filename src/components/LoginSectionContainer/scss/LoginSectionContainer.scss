@@ -1,7 +1,49 @@
-.LoginSectionContainer {
-  max-width: max-content;
-  margin-top: auto;
-  margin-left: auto;
-  margin-bottom: auto;
-  margin-right: auto;
+.Wrapper {
+  height: 100%;
+  width: 100%;
+  /* flex-grow 적용하면 나머지 빈공간을 모두 채운다. */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .GoTo {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 700px;
+    margin-bottom: 20px;
+
+    .LoginChangeBtn {
+    }
+
+    .SignUpBtn {
+    }
+  }
+
+  > .LoginContainer {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    border: 1px solid red;
+    max-width: 1000px;
+    min-width: 700px;
+    max-height: 700px;
+
+    .Email {
+      margin-bottom: 15px;
+      justify-content: center;
+    }
+
+    .Password {
+      margin-bottom: 15px;
+    }
+
+    .LoginBtn {
+      margin-bottom: 15px;
+    }
+  }
 }
