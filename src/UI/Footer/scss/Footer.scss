@@ -1,0 +1,39 @@
+.footer {
+  background-color: grey;
+  width: "auto";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .Copyright {
+    font-size: medium;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .FrontDeveloper {
+    font-size: medium;
+
+    margin-bottom: 5px;
+  }
+
+  .BackDeveloper {
+    font-size: medium;
+
+    margin-bottom: 5px;
+  }
+
+  .Github {
+    font-size: medium;
+
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  .PersonalPrivate {
+    font-size: medium;
+
+    text-align: right;
+    margin-bottom: 5px;
+  }
+}
