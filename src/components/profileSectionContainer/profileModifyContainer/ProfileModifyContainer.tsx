@@ -9,7 +9,7 @@ const ProfileModifyContainer = () => {
       <label htmlFor="hidden" className="profileImgBtn">
         <FontAwesomeIcon icon={faUser} className="profileImg" size="6x" />
       </label>
-      <input type="file" id="hidden" />
+      <input type="file" id="hidden" accept="image/*" />
       <ProfileInfoModifyContainer />
     </div>
   );
