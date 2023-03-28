@@ -1,0 +1,23 @@
+.profileModifyContainer {
+  display: flex;
+  align-items: center;
+}
+.profileModifyContainer .profileImgBtn {
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.profileModifyContainer .profileImgBtn .profileImg {
+  color: rgb(90, 188, 227);
+  background-color: lightblue;
+  padding: 40px 20px;
+  outline: none;
+  border-radius: 10px;
+}
+.profileModifyContainer #hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=ProfileModifyContainer.css.map */

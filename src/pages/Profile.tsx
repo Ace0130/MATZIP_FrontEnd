@@ -1,9 +1,10 @@
 import Layout from "../components/Layout";
+import ProfileSectionContainer from "../components/profileSectionContainer/ProfileSectionContainer";
 
 const Profile = () => {
   return (
     <Layout>
-      <div>프로필입니다.</div>
+      <ProfileSectionContainer />
     </Layout>
   );
 };
