@@ -1,0 +1,19 @@
+.labelInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.labelInput label {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.labelInput input {
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 16px;
+  box-shadow: 2px 2px 4px rgb(228, 228, 228);
+}
+
+/*# sourceMappingURL=LabelInput.css.map */

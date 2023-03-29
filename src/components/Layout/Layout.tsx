@@ -4,9 +4,9 @@ import "./Layout.css";
 
 const Layout = ({ children }: any) => {
   return (
-    <div className="Layout">
+    <div className="layout">
       <Header />
-      <div className="LayoutMainWrapper">{children}</div>
+      <div className="layoutMainWrapper">{children}</div>
       <Footer />
     </div>
   );

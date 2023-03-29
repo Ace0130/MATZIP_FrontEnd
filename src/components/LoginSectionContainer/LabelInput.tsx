@@ -1,5 +1,5 @@
-import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import "./css/LabelInput.css";
 
 interface ILabelInput {
   labelName: string;
@@ -15,7 +15,7 @@ const LabelInput = ({
   inputName = uuidv4(),
 }: ILabelInput) => {
   return (
-    <div>
+    <div className="labelInput">
       <label htmlFor={inputName}>{[labelName]}</label>
       <input
         type={inputType}
@@ -25,4 +25,5 @@ const LabelInput = ({
     </div>
   );
 };
+
 export default LabelInput;
