@@ -1,7 +1,7 @@
 import LabelInput from "../LabelInput";
-import "./css/LoginSectionContainer.css";
 import LoginChangeBtn from "./LoginBtn";
 import SignUpBtn from "./SignUpBtn";
+import "./css/LoginSectionContainer.css";
 
 const LoginSectionContainer = () => {
   return (
@@ -10,12 +10,10 @@ const LoginSectionContainer = () => {
         <div className="LoginChangeBtn">
           <LoginChangeBtn />
         </div>
-
         <div className="SignUpBtn">
           <SignUpBtn />
         </div>
       </div>
-
       <div className="LoginContainer">
         <div className="Email">
           <LabelInput
