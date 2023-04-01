@@ -1,13 +1,13 @@
-import CategoryContainer from "./categoryContainer/CategoryContainer";
+import CategoryContainer from "./CategoryContainer";
+import TodaysRecommendMenuBanner from "./TodaysRecommendMenuBanner";
+import PopularRestaurantsMenuItem from "./PopualarRestaurantsMenuItem";
 import "./css/MainSectionContainer.css";
-import PopularRestaurantsMenuItem from "./popularRestaurantsContainer/PopualarRestaurantsMenuItem";
-import TodaysRecommendMenuBanner from "./todaysRecommendMenuBanner/TodaysRecommendMenuBanner";
 
 const MainSectionContainer = () => {
   return (
     <div className="mainSectionContainer">
-      <CategoryContainer />
       <TodaysRecommendMenuBanner />
+      <CategoryContainer />
       <PopularRestaurantsMenuItem />
     </div>
   );

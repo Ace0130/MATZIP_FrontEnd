@@ -2,7 +2,6 @@
 .layout {
   margin: 0;
   padding: 0;
-  width: 100vw;
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -20,6 +19,7 @@
   flex-grow: 1;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
   padding-bottom: 160px; /*푸터의 크기, 푸터의 크기에 따라 변경됨.*/
 }
 

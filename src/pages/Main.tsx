@@ -1,5 +1,5 @@
-import Layout from "../components/layout/Layout";
-import MainSectionContainer from "../components/mainSectionContainer/MainSectionContainer";
+import Layout from "../components/Layout/Layout";
+import MainSectionContainer from "../components/MainSectionContainer/MainSectionContainer";
 
 const Main = () => {
   return (
