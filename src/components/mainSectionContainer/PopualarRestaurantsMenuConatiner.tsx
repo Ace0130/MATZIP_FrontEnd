@@ -1,16 +1,13 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import CategoryBtn from "./CategoryBtn";
-import CategoryMenuItem from "./CategoryMenuItem";
-import "./css/CategoryContainer.css";
+import "./css/PopularRestaurantsMenuItem.css";
 
 interface Image {
   large_cover_image: string;
 }
 
-const CategoryContainer = () => {
-  const DATA_LENGTH = 6;
-  const foodCategorys = ["한식", "일식", "중식", "양식", "랜덤 메뉴 추천"];
+const PopularRestaurantsMenuContainer = () => {
+  const DATA_LENGTH = 8;
   const [imgs, setImgs] = useState<Image[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -36,16 +33,16 @@ const CategoryContainer = () => {
   return (
     <>
       {isLoading ? null : (
-        <div className="categoryContainer">
-          <label className="categoryLabel">음식 카테고리</label>
-          <div className="categoryBtnContainer">
-            {foodCategorys.map((foodCategory, idx) => (
-              <CategoryBtn key={idx} context={foodCategory} />
-            ))}
-          </div>
-          <div className="categoryMenuContainer">
+        <div className="popularRestaurantsContainer">
+          <label>인기 식당 메뉴</label>
+          <div className="popularRestaurantsMenuContainer">
             {imgs.map((img, idx) => (
-              <CategoryMenuItem key={idx} img={img} />
+              <img
+                key={idx.toString()}
+                className="popularRestaurantsMenuItem"
+                src={img.large_cover_image}
+                alt="사진"
+              />
             ))}
           </div>
         </div>
@@ -54,4 +51,4 @@ const CategoryContainer = () => {
   );
 };
 
-export default CategoryContainer;
+export default PopularRestaurantsMenuContainer;

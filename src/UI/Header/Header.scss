@@ -40,6 +40,10 @@
     }
   }
 
+  .searchBar:focus-within {
+    border-color: #5711c8;
+  }
+
   .btnContainer {
     display: flex;
     justify-content: space-between;

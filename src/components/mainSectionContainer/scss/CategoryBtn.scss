@@ -1,9 +1,5 @@
-$categoryBtnHoverColor: rgb(0, 123, 255);
-
 .categoryBtn {
   margin-right: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 
   button {
     outline: none;
@@ -17,8 +13,8 @@ $categoryBtnHoverColor: rgb(0, 123, 255);
   }
 
   button:hover {
-    border-color: $categoryBtnHoverColor;
-    color: $categoryBtnHoverColor;
+    border-color: #5711c8;
+    color: #5711c8;
     transition: all 0.5s;
   }
 }

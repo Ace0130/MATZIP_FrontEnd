@@ -1,25 +1,24 @@
 .categoryContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
+  padding: 0 100px;
 }
 .categoryContainer .categoryLabel {
-  font-size: 30px;
-  font-weight: bold;
-}
-.categoryContainer .categoryBtnContainer {
-  display: flex;
-}
-.categoryContainer .categoryMenuLabel {
   display: inline-block;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
 }
+.categoryContainer .categoryBtnContainer {
+  display: flex;
+  margin-bottom: 40px;
+}
 .categoryContainer .categoryMenuContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 80px;
+  grid-template-columns: repeat(3, 500px);
+  grid-column-gap: 100px;
+  grid-row-gap: 40px;
 }
 
 /*# sourceMappingURL=CategoryContainer.css.map */

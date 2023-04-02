@@ -36,6 +36,9 @@
 .header .searchBar button svg {
   height: 100%;
 }
+.header .searchBar:focus-within {
+  border-color: #5711c8;
+}
 .header .btnContainer {
   display: flex;
   justify-content: space-between;

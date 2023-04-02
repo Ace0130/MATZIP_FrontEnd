@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
 }
 .todaysRecommendMenuBanner label {
   color: white;
@@ -23,7 +23,6 @@
 .todaysRecommendMenuBanner .imgChangeBtnContainer {
   display: flex;
   justify-content: center;
-  padding: 10px;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -39,7 +38,7 @@
   cursor: pointer;
 }
 .todaysRecommendMenuBanner .imgChangeBtnContainer .enabled {
-  background-color: blue;
+  background-color: #5711c8;
 }
 
 /*# sourceMappingURL=TodaysRecommendMenuBanner.css.map */
