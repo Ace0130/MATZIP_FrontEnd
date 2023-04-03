@@ -1,4 +1,4 @@
-import Layout from "../components/layout/Layout";
+import Layout from "../components/Layout/Layout";
 import ProfileSectionContainer from "../components/profileSectionContainer/ProfileSectionContainer";
 
 const Profile = () => {
