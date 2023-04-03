@@ -59,7 +59,7 @@ const TodaysRecommendMenuBanner = () => {
     <div className="todaysRecommendMenuBanner">
       {foods.length > 0 && (
         <>
-          <label>오늘의 인기 메뉴</label>
+          <label>오늘의 추천 메뉴</label>
           <img src={foods[imgIdx].background_image} alt="배너 이미지" />
           <div className="imgChangeBtnContainer">
             {foods.map((food, imgIdx) => (

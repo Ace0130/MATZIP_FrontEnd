@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./css/PopularRestaurantsMenuItem.css";
+import "./css/PopularRestaurantsMenuContainer.css";
 
 interface Image {
   large_cover_image: string;
