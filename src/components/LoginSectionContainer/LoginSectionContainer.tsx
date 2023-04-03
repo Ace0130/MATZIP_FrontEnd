@@ -1,19 +1,25 @@
 import LabelInput from "../LabelInput/LabelInput";
 import "./css/LoginSectionContainer.css";
-import LoginChangeBtn from "./LoginBtn";
-import SignUpBtn from "./SignUpBtn";
+import { useNavigate } from "react-router-dom";
 
 const LoginSectionContainer = () => {
-  return (
-    <div className="Wrapper">
-      <div className="GoTo">
-        <div className="LoginChangeBtn">
-          <LoginChangeBtn />
-        </div>
+  const navigate = useNavigate();
 
-        <div className="SignUpBtn">
-          <SignUpBtn />
-        </div>
+  /** 로그인 페이지로 이동하는 함수 */
+  const goToLogin = () => {
+    navigate("/login");
+  };
+
+  /** 회원가입 페이지로 이동하는 함수 */
+  const goToSignUp = () => {
+    navigate("/signup");
+  };
+
+  return (
+    <div className="loginContainer">
+      <div className="goToContainer">
+        <button onClick={goToLogin}>로그인</button>
+        <button onClick={goToSignUp}>회원가입</button>
       </div>
 
       <div className="LoginContainer">

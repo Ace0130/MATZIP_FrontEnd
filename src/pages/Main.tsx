@@ -1,4 +1,4 @@
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/layout/Layout";
 import MainSectionContainer from "../components/mainSectionContainer/MainSectionContainer";
 
 const Main = () => {

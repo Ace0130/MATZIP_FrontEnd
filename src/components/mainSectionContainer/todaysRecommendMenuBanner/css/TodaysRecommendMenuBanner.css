@@ -1,0 +1,41 @@
+.todaysRecommendMenuBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  margin-bottom: 120px;
+}
+.todaysRecommendMenuBanner label {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.todaysRecommendMenuBanner img {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+.todaysRecommendMenuBanner .imgChangeBtnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.todaysRecommendMenuBanner .imgChangeBtnContainer button {
+  background-color: lightgray;
+  border: none;
+  border-radius: 9999px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.todaysRecommendMenuBanner .imgChangeBtnContainer .enabled {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=TodaysRecommendMenuBanner.css.map */
