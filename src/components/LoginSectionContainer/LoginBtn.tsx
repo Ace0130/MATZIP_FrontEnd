@@ -7,7 +7,19 @@ function LoginChangeBtn() {
     navigate("/login");
   };
 
-  return <button onClick={onClick}>로그인</button>;
+  return (
+    <div>
+      <input
+        type="radio"
+        placeholder="로그인"
+        name="LoginChangeBtn"
+        id="LoginChangeBtn"
+        onClick={onClick}
+        style={{ display: "none" }}
+      ></input>
+      <label htmlFor="LoginChangeBtn">로그인</label>
+    </div>
+  );
 }
 
 export default LoginChangeBtn;

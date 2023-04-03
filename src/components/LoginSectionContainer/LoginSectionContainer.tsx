@@ -1,4 +1,4 @@
-import LabelInput from "../LabelInput";
+import LabelInput from "../LabelInput/LabelInput";
 import "./css/LoginSectionContainer.css";
 import LoginChangeBtn from "./LoginBtn";
 import SignUpBtn from "./SignUpBtn";
@@ -32,13 +32,14 @@ const LoginSectionContainer = () => {
           />
         </div>
         <div className="LoginBtn">
-          <label htmlFor="button"></label>
           <input
-            type="button"
-            name="button"
+            type="radio"
             placeholder="로그인"
-            value="Login"
+            name="Login"
+            id="Login"
+            style={{ display: "none" }}
           ></input>
+          <label htmlFor="Login">로그인</label>
         </div>
       </div>
     </div>

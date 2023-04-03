@@ -15,12 +15,15 @@ const LabelInput = ({
   inputName = uuidv4(),
 }: ILabelInput) => {
   return (
-    <div>
-      <label htmlFor={inputName}>{[labelName]}</label>
+    <div className="InputLabel">
+      <label htmlFor={inputName} className="InputName">
+        {[labelName]}
+      </label>
       <input
         type={inputType}
         name={inputName}
         placeholder={placeHolder}
+        className="InputInfo"
       ></input>
     </div>
   );

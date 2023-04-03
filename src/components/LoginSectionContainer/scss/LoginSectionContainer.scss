@@ -11,16 +11,33 @@
   .GoTo {
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
+    border: 1px;
     max-width: 500px;
     min-width: 300px;
     max-height: 700px;
-    margin-bottom: 20px;
 
     .LoginChangeBtn {
+      display: block;
+      width: 50%;
+      height: 48px;
+      font-size: 16px;
+      line-height: 48px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 8px 8px 0 0;
+      border: 1px solid #3facba;
     }
 
     .SignUpBtn {
+      display: block;
+      width: 50%;
+      height: 48px;
+      font-size: 16px;
+      line-height: 48px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 8px 8px 0 0;
+      border: 1px solid #3facba;
     }
   }
 
@@ -28,22 +45,39 @@
     align-items: center;
     flex-direction: column;
     display: flex;
-    border: 1px solid red;
+    border: 1px solid #3facba;
+    border-radius: 8px 8px 8px 8px;
     max-width: 1000px;
     min-width: 700px;
-    max-height: 700px;
+    max-height: 800px;
 
     .Email {
-      margin-bottom: 15px;
+      margin-top: 15px;
       justify-content: center;
+      position: relative;
+      height: 56px;
+      border: 1px solid #e0e0e0;
+      width: 450px;
     }
 
     .Password {
       margin-bottom: 15px;
+      position: relative;
+      height: 56px;
+      border: 1px solid #e0e0e0;
+      width: 450px;
     }
 
     .LoginBtn {
       margin-bottom: 15px;
+      display: block;
+      width: 20%;
+      height: 16px;
+      padding: 13px 16px 14px;
+      text-align: center;
+      border-radius: 8px;
+      border: 1px solid #3facba;
+      overflow: hidden;
     }
   }
 }
