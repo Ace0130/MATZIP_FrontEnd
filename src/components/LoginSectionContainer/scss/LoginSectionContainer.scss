@@ -14,16 +14,33 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
+    border: 1px;
     max-width: 500px;
     min-width: 300px;
     max-height: 700px;
-    margin-bottom: 20px;
 
     .LoginChangeBtn {
+      display: block;
+      width: 50%;
+      height: 48px;
+      font-size: 16px;
+      line-height: 48px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 8px 8px 0 0;
+      border: 1px solid #3facba;
     }
 
     .SignUpBtn {
+      display: block;
+      width: 50%;
+      height: 48px;
+      font-size: 16px;
+      line-height: 48px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 8px 8px 0 0;
+      border: 1px solid #3facba;
     }
   }
 
@@ -31,22 +48,45 @@
     align-items: center;
     flex-direction: column;
     display: flex;
-    border: 1px solid red;
-    max-width: 1000px;
-    min-width: 700px;
-    max-height: 700px;
+    border: 1px solid #3facba;
+    border-radius: 8px 8px 8px 8px;
+    max-width: 7000px;
+    min-width: 500px;
+    max-height: 800px;
 
-    .Email {
-      margin-bottom: 15px;
-      justify-content: center;
+    .input-t-m {
+      margin-top: 30px;
     }
-
-    .Password {
-      margin-bottom: 15px;
-    }
-
-    .LoginBtn {
+    .input-b-m {
       margin-bottom: 15px;
     }
+    .loginInput {
+      position: relative;
+      height: 40px;
+      width: 400px;
+      border: 1px solid #3facba;
+      border-radius: 8px 8px 8px 8px;
+      outline: none;
+    }
+  }
+
+  .inputIcon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    left: 10px;
+  }
+
+  .LoginBtn {
+    margin-bottom: 15px;
+    display: block;
+    width: 20%;
+    height: 16px;
+    padding: 13px 16px 14px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #3facba;
+    overflow: hidden;
   }
 }
