@@ -17,16 +17,24 @@ const LoginSectionContainer = () => {
       </div>
 
       <div className="LoginContainer">
-        <div className="Email">
+        <div className="loginInput input-t-m">
+          <img
+            className="inputIcon"
+            src="https://api.iconify.design/material-symbols:person.svg?color=gray"
+          ></img>
           <LabelInput
-            labelName="이메일"
+            labelName=""
             inputType="email"
             placeHolder="이메일을 입력해주세요"
           />
         </div>
-        <div className="Password">
+        <div className="loginInput input-b-m">
+          <img
+            className="inputIcon"
+            src="https://api.iconify.design/material-symbols:lock-sharp.svg?color=gray"
+          ></img>
           <LabelInput
-            labelName="비밀번호"
+            labelName=""
             inputType="password"
             placeHolder="비밀번호를 입력해주세요"
           />

@@ -47,25 +47,31 @@
     display: flex;
     border: 1px solid #3facba;
     border-radius: 8px 8px 8px 8px;
-    max-width: 1000px;
-    min-width: 700px;
+    max-width: 7000px;
+    min-width: 500px;
     max-height: 800px;
 
-    .Email {
-      margin-top: 15px;
-      justify-content: center;
+    .input-t-m {
+      margin-top: 30px;
+    }
+    .input-b-m {
+      margin-bottom: 15px;
+    }
+    .loginInput {
       position: relative;
-      height: 56px;
-      border: 1px solid #e0e0e0;
-      width: 450px;
+      height: 40px;
+      width: 400px;
+      border: 1px solid #3facba;
+      border-radius: 8px 8px 8px 8px;
+      outline: none;
     }
 
-    .Password {
-      margin-bottom: 15px;
-      position: relative;
-      height: 56px;
-      border: 1px solid #e0e0e0;
-      width: 450px;
+    .inputIcon {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 6px;
+      left: 10px;
     }
 
     .LoginBtn {
