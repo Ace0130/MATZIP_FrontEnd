@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "./css/ProfileModifyContainer.css";
-import ProfileInfoModifyContainer from "./profileInfoModifyContainer/ProfileInfoModifyContainer";
+import ProfileInfoModifyContainer from "./ProfileInfoModifyContainer";
 
 const ProfileModifyContainer = () => {
   return (

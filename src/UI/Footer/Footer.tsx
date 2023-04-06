@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom";
+import Logo from "../Logo";
 import "./css/Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="Copyright">Copyright 2023 by Team.K_BlackCow</div>
-      <div className="FrontDeveloper">
-        프론트 개발: yno1109@naver.com brian013054@gmail.com
-      </div>
-      <div className="BackDeveloper">
-        백엔드 개발: valy008@naver.com yoonki1207@gamil.com
-      </div>
-      <div className="Github">
-        https://github.com/Ace0130/MATZIP_FrontEnd.git
-      </div>
-      <div className="PersonalPrivate">개인정보 동의서</div>
+      <Logo />
+      <nav>
+        <Link to={"/notice"}>공지사항</Link>
+        <Link to={"/contract"}>이용약관</Link>
+        <Link to={"/contract_non_signup"}>비회원 이용자 이용정책</Link>
+        <Link to={"/privacy"}>개인정보 처리방침</Link>
+        <Link to={"/location"}>위치기반서비스 이용약관</Link>
+        <Link to={"/community_guidelines"}>커뮤니티 가이드라인</Link>
+        <Link to={"/contact"}>문의하기</Link>
+      </nav>
+      <div className="copyright">Copyright ⓒ 2023 by Team.K_BlackCow</div>
     </footer>
   );
 };

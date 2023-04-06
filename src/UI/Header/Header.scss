@@ -1,10 +1,13 @@
+$defaultColor: white;
+$themeColor: #5711c8;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   padding: 0 100px;
-  background-color: white;
+  background-color: $defaultColor;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,13 +43,17 @@
     }
   }
 
+  .searchBar:focus-within {
+    border-color: $themeColor;
+  }
+
   .btnContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .loginBtn {
-      background-color: white;
+      background-color: $defaultColor;
       border: none;
       outline: none;
       border-radius: 10px;
@@ -54,6 +61,10 @@
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
+
+      &:hover {
+        color: $themeColor;
+      }
     }
   }
 }

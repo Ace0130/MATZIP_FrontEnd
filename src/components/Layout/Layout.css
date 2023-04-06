@@ -17,10 +17,5 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
-  align-items: center;
   padding-top: 60px;
-  padding-bottom: 160px; /*푸터의 크기, 푸터의 크기에 따라 변경됨.*/
 }
-
-/*# sourceMappingURL=Layout.css.map */

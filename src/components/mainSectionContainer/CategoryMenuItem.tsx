@@ -10,7 +10,7 @@ interface Props {
 
 const CategoryMenuItem = ({ img }: Props) => {
   return (
-    <div>
+    <div className="categoryMenuItemContainer">
       <img
         className="categoryMenuItem"
         src={img.large_cover_image}

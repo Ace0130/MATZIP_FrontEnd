@@ -36,6 +36,9 @@
 .header .searchBar button svg {
   height: 100%;
 }
+.header .searchBar:focus-within {
+  border-color: #5711c8;
+}
 .header .btnContainer {
   display: flex;
   justify-content: space-between;
@@ -50,6 +53,9 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+.header .btnContainer .loginBtn:hover {
+  color: #5711c8;
 }
 
 /*# sourceMappingURL=Header.css.map */

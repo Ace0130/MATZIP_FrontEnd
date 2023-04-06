@@ -1,4 +1,4 @@
-import ProfileModifyContainer from "./profileModifyContainer/ProfileModifyContainer";
+import ProfileModifyContainer from "./ProfileModifyContainer";
 import "./css/ProfileSectionContainer.css";
 
 const ProfileSectionContainer = () => {

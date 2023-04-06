@@ -10,11 +10,12 @@
   cursor: pointer;
 }
 .profileModifyContainer .profileImgBtn .profileImg {
+  width: 250px;
+  height: 250px;
   color: rgb(90, 188, 227);
   background-color: lightblue;
-  padding: 40px 20px;
   outline: none;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 .profileModifyContainer #hidden {
   display: none;

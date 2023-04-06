@@ -1,7 +1,5 @@
 .categoryBtn {
   margin-right: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 .categoryBtn button {
   outline: none;
@@ -12,10 +10,11 @@
   padding: 10px 20px;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
 }
 .categoryBtn button:hover {
-  border-color: rgb(0, 123, 255);
-  color: rgb(0, 123, 255);
+  border-color: #5711c8;
+  color: #5711c8;
   transition: all 0.5s;
 }
 

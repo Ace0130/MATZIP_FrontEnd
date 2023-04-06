@@ -1,27 +1,28 @@
 .categoryContainer {
+  max-width: calc(100% - 200px);
+  min-width: calc(100% - 200px);
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin: 0 100px 90px 100px;
 
   .categoryLabel {
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .categoryBtnContainer {
-    display: flex;
-  }
-
-  .categoryMenuLabel {
     display: inline-block;
-    font-size: 23px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
   }
 
+  .categoryBtnContainer {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
   .categoryMenuContainer {
+    max-width: 100%;
+    min-width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
   }
 }

@@ -1,6 +1,6 @@
-import CategoryContainer from "./CategoryContainer";
 import TodaysRecommendMenuBanner from "./TodaysRecommendMenuBanner";
-import PopularRestaurantsMenuItem from "./PopualarRestaurantsMenuItem";
+import CategoryContainer from "./CategoryContainer";
+import PopularRestaurantsMenuContainer from "./PopularRestaurantsMenuConatiner";
 import "./css/MainSectionContainer.css";
 
 const MainSectionContainer = () => {
@@ -8,7 +8,7 @@ const MainSectionContainer = () => {
     <div className="mainSectionContainer">
       <TodaysRecommendMenuBanner />
       <CategoryContainer />
-      <PopularRestaurantsMenuItem />
+      <PopularRestaurantsMenuContainer />
     </div>
   );
 };
