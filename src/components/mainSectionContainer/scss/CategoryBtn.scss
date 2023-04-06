@@ -10,11 +10,12 @@
     padding: 10px 20px;
     font-size: 15px;
     font-weight: bold;
-  }
+    cursor: pointer;
 
-  button:hover {
-    border-color: #5711c8;
-    color: #5711c8;
-    transition: all 0.5s;
+    &:hover {
+      border-color: #5711c8;
+      color: #5711c8;
+      transition: all 0.5s;
+    }
   }
 }

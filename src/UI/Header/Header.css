@@ -54,5 +54,8 @@
   font-weight: bold;
   cursor: pointer;
 }
+.header .btnContainer .loginBtn:hover {
+  color: #5711c8;
+}
 
 /*# sourceMappingURL=Header.css.map */

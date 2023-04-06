@@ -10,6 +10,7 @@
   padding: 10px 20px;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
 }
 .categoryBtn button:hover {
   border-color: #5711c8;
