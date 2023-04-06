@@ -17,7 +17,9 @@ function SignUpBtn() {
         onClick={onClick}
         style={{ display: "none" }}
       ></input>
-      <label htmlFor="SignupBtn">회원가입</label>
+      <label className="Fontsize" htmlFor="SignupBtn">
+        회원가입
+      </label>
     </div>
   );
 }

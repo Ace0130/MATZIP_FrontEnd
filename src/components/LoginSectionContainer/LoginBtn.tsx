@@ -17,7 +17,9 @@ function LoginChangeBtn() {
         onClick={onClick}
         style={{ display: "none" }}
       ></input>
-      <label htmlFor="LoginChangeBtn">로그인</label>
+      <label className="Fontsize" htmlFor="LoginChangeBtn">
+        로그인
+      </label>
     </div>
   );
 }

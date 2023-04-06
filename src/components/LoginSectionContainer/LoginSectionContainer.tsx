@@ -1,25 +1,19 @@
 import LabelInput from "../LabelInput/LabelInput";
 import "./css/LoginSectionContainer.css";
-import { useNavigate } from "react-router-dom";
+import LoginChangeBtn from "./LoginBtn";
+import SignUpBtn from "./SignUpBtn";
 
 const LoginSectionContainer = () => {
-  const navigate = useNavigate();
-
-  /** 로그인 페이지로 이동하는 함수 */
-  const goToLogin = () => {
-    navigate("/login");
-  };
-
-  /** 회원가입 페이지로 이동하는 함수 */
-  const goToSignUp = () => {
-    navigate("/signup");
-  };
-
   return (
-    <div className="loginContainer">
-      <div className="goToContainer">
-        <button onClick={goToLogin}>로그인</button>
-        <button onClick={goToSignUp}>회원가입</button>
+    <div className="Wrapper">
+      <div className="GoTo">
+        <div className="ChangeBtn">
+          <LoginChangeBtn />
+        </div>
+
+        <div className="SignUpBtn">
+          <SignUpBtn />
+        </div>
       </div>
 
       <div className="LoginContainer">
@@ -53,7 +47,9 @@ const LoginSectionContainer = () => {
             id="Login"
             style={{ display: "none" }}
           ></input>
-          <label htmlFor="Login">로그인</label>
+          <label className="Fontsize" htmlFor="Login">
+            로그인
+          </label>
         </div>
       </div>
     </div>
