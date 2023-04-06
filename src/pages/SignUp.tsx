@@ -1,9 +1,10 @@
 import Layout from "../components/Layout/Layout";
+import SignUpSectionContainer from "../UI/signup/signupsectioncontainer";
 
 const SignUp = () => {
   return (
     <Layout>
-      <div>회원가입</div>
+      <SignUpSectionContainer />
     </Layout>
   );
 };

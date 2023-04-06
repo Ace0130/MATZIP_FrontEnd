@@ -1,62 +1,97 @@
-.loginContainer {
-  width: 400px;
-  padding-bottom: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
+@charset "UTF-8";
+.Wrapper {
+  height: 100%;
+  width: 100%;
+  /* flex-grow 적용하면 나머지 빈공간을 모두 채운다. */
+  flex-grow: 1;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px rgb(228, 228, 228);
 }
-.loginContainer .goToContainer {
-  width: 100%;
+.Wrapper .GoTo {
   display: flex;
-  margin-bottom: 30px;
+  justify-content: space-around;
+  border: 1px;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
 }
-.loginContainer .goToContainer button {
-  background-color: white;
-  outline: none;
-  border: 1px solid lightgray;
-  border-top: none;
-  border-radius: 2px;
-  padding: 10px 20px;
-  cursor: pointer;
+.Wrapper .GoTo .ChangeBtn {
+  display: block;
   width: 50%;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #3facba;
+}
+.Wrapper .GoTo .ChangeBtn .Fontsize {
   font-size: 16px;
 }
-.loginContainer .inputContainer {
-  width: 100%;
-  margin-bottom: 30px;
-}
-.loginContainer .loginBtn {
-  width: 100%;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 10px 20px;
-  outline: none;
-  cursor: pointer;
-  margin-bottom: 30px;
+.Wrapper .GoTo .SignUpBtn {
+  display: block;
+  width: 50%;
+  height: 48px;
   font-size: 16px;
-  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #3facba;
 }
-.loginContainer .loginBtn:hover {
-  background-color: black;
-  color: white;
-  transition: all 0.5s;
+.Wrapper .GoTo .SignUpBtn a:hover p, .Wrapper .GoTo .SignUpBtn a:focus p {
+  color: gray;
 }
-.loginContainer .btnContainer .findBtn {
-  color: blue;
-  background-color: inherit;
-  padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  border: none;
-  text-decoration: underline;
+.Wrapper .GoTo .SignUpBtn .Fontsize {
+  font-size: 16px;
+}
+.Wrapper > .LoginContainer {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  border: 1px solid #3facba;
+  border-radius: 8px 8px 8px 8px;
+  max-width: 7000px;
+  min-width: 500px;
+  max-height: 800px;
+}
+.Wrapper > .LoginContainer .input-t-m {
+  margin-top: 30px;
+}
+.Wrapper > .LoginContainer .input-b-m {
+  margin-bottom: 15px;
+}
+.Wrapper > .LoginContainer .loginInput {
+  position: relative;
+  height: 40px;
+  width: 400px;
+  border: 1px solid #3facba;
+  border-radius: 8px 8px 8px 8px;
   outline: none;
-  cursor: pointer;
+}
+.Wrapper > .LoginContainer .inputIcon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 6px;
+  left: 10px;
+}
+.Wrapper > .LoginContainer .LoginBtn {
+  margin-bottom: 15px;
+  display: block;
+  width: 20%;
+  height: 16px;
+  padding: 13px 16px 14px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #3facba;
+  overflow: hidden;
+}
+.Wrapper > .LoginContainer .LoginBtn .Fontsize {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=LoginSectionContainer.css.map */

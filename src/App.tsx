@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Detail from "./pages/Detail";
-import Login from "./pages/Login";
 import Main from "./pages/Main";
-import Profile from "./pages/Profile";
+import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Profile from "./pages/Profile";
+import Detail from "./pages/Detail";
 
 const App = () => {
   return (
