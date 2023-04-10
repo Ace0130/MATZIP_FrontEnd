@@ -1,0 +1,28 @@
+.categoryContainer {
+  max-width: calc(100% - 200px);
+  min-width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px 90px 100px;
+
+  .categoryLabel {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .categoryBtnContainer {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .categoryMenuContainer {
+    max-width: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
+  }
+}
