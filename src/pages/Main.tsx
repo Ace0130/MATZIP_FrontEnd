@@ -1,10 +1,10 @@
-import Layout from "../components/Layout/Layout";
-import MainSectionContainer from "../components/MainSectionContainer/MainSectionContainer";
+import Layout from "../layout/layout";
+import MainSection from "../ui/mainSection/mainSection";
 
 const Main = () => {
   return (
     <Layout>
-      <MainSectionContainer />
+      <MainSection />
     </Layout>
   );
 };

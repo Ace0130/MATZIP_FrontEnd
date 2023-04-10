@@ -1,10 +1,10 @@
-import Layout from "../components/Layout/Layout";
-import SignUpSectionContainer from "../UI/signup/signupsectioncontainer";
+import Layout from "../layout/layout";
+import SignUpSection from "../ui/signupSection/signupSection";
 
 const SignUp = () => {
   return (
     <Layout>
-      <SignUpSectionContainer />
+      <SignUpSection />
     </Layout>
   );
 };

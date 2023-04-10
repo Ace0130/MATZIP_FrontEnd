@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/labelInput.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA",
+  "file": "labelInput.css"
+}

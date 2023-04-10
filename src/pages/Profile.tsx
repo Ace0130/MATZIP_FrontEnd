@@ -1,10 +1,10 @@
-import Layout from "../components/Layout/Layout";
-import ProfileSectionContainer from "../components/ProfileSectionContainer/ProfileSectionContainer";
+import Layout from "../layout/layout";
+import ProfileSection from "../ui/profileSection/profileSection";
 
 const Profile = () => {
   return (
     <Layout>
-      <ProfileSectionContainer />
+      <ProfileSection />
     </Layout>
   );
 };

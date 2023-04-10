@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/categoryMenu.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;EACA;;AACA;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA",
+  "file": "categoryMenu.css"
+}

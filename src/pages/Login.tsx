@@ -1,10 +1,10 @@
-import Layout from "../components/Layout/Layout";
-import LoginSectionContainer from "../components/LoginSectionContainer/LoginSectionContainer";
+import Layout from "../layout/layout";
+import LoginSection from "../ui/loginSection/loginSection";
 
 const Login = () => {
   return (
     <Layout>
-      <LoginSectionContainer />
+      <LoginSection />
     </Layout>
   );
 };
