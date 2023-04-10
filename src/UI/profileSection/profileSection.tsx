@@ -27,7 +27,7 @@ const ProfileSection = () => {
     setIntroduction(modifiedIntro);
   };
 
-  // TODO: 뒷 배경 blur처리하고 disabled, 스크롤바 업애는 처리
+  // TODO: 뒷 배경 blur처리하고 disabled, 스크롤바 업애는 처리..
 
   return (
     <>
