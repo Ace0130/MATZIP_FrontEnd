@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import CategoryBtn from "../../components/CategoryBtn";
-import CategoryMenuItem from "../../components/CategoryMenu";
+import MenuItem from "../../components/MenuItem";
 import "./css/categoryContainer.css";
 
 interface Image {
@@ -45,7 +45,7 @@ const CategoryContainer = () => {
           </div>
           <div className="categoryMenuContainer">
             {imgs.map((img, idx) => (
-              <CategoryMenuItem key={idx} img={img} />
+              <MenuItem key={idx} img={img} />
             ))}
           </div>
         </div>

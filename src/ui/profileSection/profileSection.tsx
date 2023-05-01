@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./css/profileSection.css";
 
 const ProfileSection = () => {
@@ -6,26 +6,37 @@ const ProfileSection = () => {
   const [modifiedName, setModifiedName] = useState("");
   const [password, setPassword] = useState("1234");
   const [modifiedPassword, setModifiedPassword] = useState("");
-  const [introduction, setIntroduction] = useState(
+  const [intro, setIntro] = useState(
     "안녕하세요. 맛집을 많이 알고 싶은 사람입니다."
   );
   const [modifiedIntro, setModifiedIntro] = useState("");
-
   const [value, setValue] = useState(1);
-  const [isOpen, setIsOpen] = useState(false);
+  const [modal, setModal] = useState(false);
 
-  const clickOpenClose = () => {
-    setIsOpen((isOpen) => !isOpen);
+  const toggleModal = () => {
+    setModal((modal) => !modal);
     setModifiedName(name);
     setModifiedPassword(password);
-    setModifiedIntro(introduction);
+    setModifiedIntro(intro);
   };
 
   const clickModify = () => {
     setName(modifiedName);
     setPassword(modifiedPassword);
-    setIntroduction(modifiedIntro);
+    setIntro(modifiedIntro);
   };
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+
+    if (modal) {
+      body?.classList.add("noScroll");
+    }
+
+    return () => {
+      body?.classList.remove("noScroll");
+    };
+  }, [modal]);
 
   // TODO: 뒷 배경 blur처리하고 disabled, 스크롤바 업애는 처리..
 
@@ -38,9 +49,9 @@ const ProfileSection = () => {
             <div className="profileTextInfoContainer">
               <div className="profileInfoModifyContainer">
                 <span>{name}</span>
-                <button onClick={clickOpenClose}>프로필 수정</button>
+                <button onClick={toggleModal}>프로필 수정</button>
               </div>
-              <span>{introduction}</span>
+              <span>{intro}</span>
             </div>
           </div>
           <div className="profileDetailInfoContainer">
@@ -129,47 +140,52 @@ const ProfileSection = () => {
           <div className={value === 3 ? "selectedTab" : undefined}>3</div>
         </div>
       </div>
-      <div className={isOpen ? "profileModifyCard" : "hidden"}>
-        <div className="profileContainer">
-          <input type="file" id="fileInput" accept="image/*" />
-          <label htmlFor="fileInput">
-            <img src="./images/profile.svg" alt="프로필" />
-          </label>
-          <span>{name}</span>
+      {modal ? (
+        <div className="profileModal">
+          <div className="overlay" onClick={toggleModal}></div>
+          <div className="modalContent">
+            <div className="profileContainer">
+              <input type="file" id="fileInput" accept="image/*" />
+              <label htmlFor="fileInput">
+                <img src="./images/profile.svg" alt="프로필" />
+              </label>
+              <span>{name}</span>
+            </div>
+            <div className="profileModifyContainer">
+              <div className="profileInputContainer">
+                <label>닉네임</label>
+                <input
+                  type="text"
+                  value={modifiedName}
+                  onChange={(event) => setModifiedName(event.target.value)}
+                />
+              </div>
+              <div className="profileInputContainer">
+                <label>비밀번호</label>
+                <input
+                  type="password"
+                  value={modifiedPassword}
+                  onChange={(event) => setModifiedPassword(event.target.value)}
+                  disabled
+                />
+              </div>
+              <div className="profileInputContainer">
+                <label>소개</label>
+                <textarea
+                  cols={30}
+                  rows={3}
+                  value={modifiedIntro}
+                  onChange={(event) => setModifiedIntro(event.target.value)}
+                />
+              </div>
+              <div className="modifyBtnContainer">
+                <button onClick={clickModify}>수정</button>
+                <button onClick={toggleModal}>닫기</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="profileModifyContainer">
-          <div className="profileInputContainer">
-            <label>닉네임</label>
-            <input
-              type="text"
-              value={modifiedName}
-              onChange={(event) => setModifiedName(event.target.value)}
-            />
-          </div>
-          <div className="profileInputContainer">
-            <label>비밀번호</label>
-            <input
-              type="password"
-              value={modifiedPassword}
-              onChange={(event) => setModifiedPassword(event.target.value)}
-              disabled
-            />
-          </div>
-          <div className="profileInputContainer">
-            <label>소개</label>
-            <textarea
-              cols={30}
-              rows={3}
-              value={modifiedIntro}
-              onChange={(event) => setModifiedIntro(event.target.value)}
-            />
-          </div>
-          <div className="modifyBtnContainer">
-            <button onClick={clickModify}>수정</button>
-            <button onClick={clickOpenClose}>닫기</button>
-          </div>
-        </div>
-      </div>
+      ) : null}
     </>
   );
 };

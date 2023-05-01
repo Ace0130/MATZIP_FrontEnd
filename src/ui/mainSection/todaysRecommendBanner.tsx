@@ -56,12 +56,12 @@ const TodaysRecommendBanner = () => {
   }, [imgIdx, prevImgIdx]);
 
   return (
-    <div className="todaysRecommendMenuBanner">
+    <div className="todaysRecommendBanner">
       {foods.length > 0 && (
         <>
           <label>오늘의 추천 메뉴</label>
           <img src={foods[imgIdx].background_image} alt="배너 이미지" />
-          <div className="imgChangeBtnContainer">
+          <div className="imgBtnContainer">
             {foods.map((food, imgIdx) => (
               <button
                 key={imgIdx}

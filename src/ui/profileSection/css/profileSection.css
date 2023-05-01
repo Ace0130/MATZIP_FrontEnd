@@ -15,45 +15,24 @@
 .profileSectionContainer .profileInfoContainer .profileBaseInfoContainer svg {
   margin-right: 10px;
 }
-.profileSectionContainer
-  .profileInfoContainer
-  .profileBaseInfoContainer
-  .profileTextInfoContainer {
+.profileSectionContainer .profileInfoContainer .profileBaseInfoContainer .profileTextInfoContainer {
   display: flex;
   flex-direction: column;
 }
-.profileSectionContainer
-  .profileInfoContainer
-  .profileBaseInfoContainer
-  .profileTextInfoContainer
-  span {
+.profileSectionContainer .profileInfoContainer .profileBaseInfoContainer .profileTextInfoContainer span {
   font-size: 16px;
   font-weight: lighter;
 }
-.profileSectionContainer
-  .profileInfoContainer
-  .profileBaseInfoContainer
-  .profileTextInfoContainer
-  .profileInfoModifyContainer {
+.profileSectionContainer .profileInfoContainer .profileBaseInfoContainer .profileTextInfoContainer .profileInfoModifyContainer {
   display: flex;
   margin-bottom: 15px;
 }
-.profileSectionContainer
-  .profileInfoContainer
-  .profileBaseInfoContainer
-  .profileTextInfoContainer
-  .profileInfoModifyContainer
-  span {
+.profileSectionContainer .profileInfoContainer .profileBaseInfoContainer .profileTextInfoContainer .profileInfoModifyContainer span {
   font-size: 28px;
   font-weight: normal;
   margin-right: 30px;
 }
-.profileSectionContainer
-  .profileInfoContainer
-  .profileBaseInfoContainer
-  .profileTextInfoContainer
-  .profileInfoModifyContainer
-  button {
+.profileSectionContainer .profileInfoContainer .profileBaseInfoContainer .profileTextInfoContainer .profileInfoModifyContainer button {
   background-color: #8d3ecb;
   border: none;
   border-radius: 12px;
@@ -74,18 +53,12 @@
   align-items: center;
   margin-left: 90px;
 }
-.profileSectionContainer
-  .profileDetailInfoContainer
-  .profileDetailInfo
-  span:first-child {
+.profileSectionContainer .profileDetailInfoContainer .profileDetailInfo span:first-child {
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 4px;
 }
-.profileSectionContainer
-  .profileDetailInfoContainer
-  .profileDetailInfo
-  span:last-child {
+.profileSectionContainer .profileDetailInfoContainer .profileDetailInfo span:last-child {
   font-size: 32px;
   font-weight: normal;
 }
@@ -123,57 +96,78 @@
   display: block;
 }
 
-.profileModifyCard {
-  display: flex;
+.profileModal,
+.overlay {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.profileModal .modalContent,
+.overlay .modalContent {
+  background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
   border: 1px solid #8d3ecb;
   border-radius: 10px;
-  background-color: white;
   padding: 60px 80px;
-  z-index: 1;
 }
-.profileModifyCard .profileContainer {
+.profileModal .modalContent .profileContainer,
+.overlay .modalContent .profileContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 40px;
 }
-.profileModifyCard .profileContainer input {
+.profileModal .modalContent .profileContainer input,
+.overlay .modalContent .profileContainer input {
   display: none;
 }
-.profileModifyCard .profileContainer img {
+.profileModal .modalContent .profileContainer img,
+.overlay .modalContent .profileContainer img {
   width: 200px;
 }
-.profileModifyCard .profileModifyContainer {
+.profileModal .modalContent .profileModifyContainer,
+.overlay .modalContent .profileModifyContainer {
   display: flex;
   flex-direction: column;
 }
-.profileModifyCard .profileModifyContainer .profileInputContainer {
+.profileModal .modalContent .profileModifyContainer .profileInputContainer,
+.overlay .modalContent .profileModifyContainer .profileInputContainer {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.profileModifyCard .profileModifyContainer .profileInputContainer label {
+.profileModal .modalContent .profileModifyContainer .profileInputContainer label,
+.overlay .modalContent .profileModifyContainer .profileInputContainer label {
   font-size: 16px;
   margin-bottom: 3px;
 }
-.profileModifyCard .profileModifyContainer .profileInputContainer input,
-.profileModifyCard .profileModifyContainer .profileInputContainer textarea {
+.profileModal .modalContent .profileModifyContainer .profileInputContainer input,
+.profileModal .modalContent .profileModifyContainer .profileInputContainer textarea,
+.overlay .modalContent .profileModifyContainer .profileInputContainer input,
+.overlay .modalContent .profileModifyContainer .profileInputContainer textarea {
   border: 1px solid lightgray;
   outline: none;
   border-radius: 2px;
   font-size: 16px;
   padding: 3px 6px;
 }
-.profileModifyCard .profileModifyContainer .modifyBtnContainer {
+.profileModal .modalContent .profileModifyContainer .modifyBtnContainer,
+.overlay .modalContent .profileModifyContainer .modifyBtnContainer {
   display: flex;
   justify-content: flex-end;
   margin-top: 40px;
 }
-.profileModifyCard .profileModifyContainer .modifyBtnContainer button {
+.profileModal .modalContent .profileModifyContainer .modifyBtnContainer button,
+.overlay .modalContent .profileModifyContainer .modifyBtnContainer button {
   margin-left: 10px;
   border: none;
   outline: none;
@@ -186,8 +180,12 @@
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
+.overlay {
+  background-color: rgba(49, 49, 49, 0.8);
+}
+
+.noScroll {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=profileSection.css.map */

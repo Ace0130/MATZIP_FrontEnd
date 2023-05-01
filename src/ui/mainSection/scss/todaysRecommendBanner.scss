@@ -1,4 +1,4 @@
-.todaysRecommendMenuBanner {
+.todaysRecommendBanner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@
     cursor: pointer;
   }
 
-  .imgChangeBtnContainer {
+  .imgBtnContainer {
     display: flex;
     justify-content: center;
     position: absolute;

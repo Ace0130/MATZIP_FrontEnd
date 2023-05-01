@@ -1,4 +1,4 @@
-.Wrapper {
+.wrapper {
   height: 100%;
   width: 100%;
   /* flex-grow 적용하면 나머지 빈공간을 모두 채운다. */
@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
 
-  .GoTo {
+  .goTo {
     display: flex;
     justify-content: space-around;
     border: 1px;
@@ -16,7 +16,7 @@
     min-width: 300px;
     max-height: 700px;
 
-    .ChangeBtn {
+    .changeBtn {
       display: block;
       width: 50%;
       height: 48px;
@@ -26,12 +26,12 @@
       box-sizing: border-box;
       border-radius: 8px 8px 0 0;
       border: 1px solid #3facba;
-      .Fontsize {
+      .fontsize {
         font-size: 16px;
       }
     }
 
-    .SignUpBtn {
+    .signUpBtn {
       display: block;
       width: 50%;
       height: 48px;
@@ -48,13 +48,13 @@
         }
       }
 
-      .Fontsize {
+      .fontsize {
         font-size: 16px;
       }
     }
   }
 
-  > .LoginContainer {
+  .loginContainer {
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -87,7 +87,7 @@
       left: 10px;
     }
 
-    .LoginBtn {
+    .loginBtn {
       margin-bottom: 15px;
       display: block;
       width: 20%;
@@ -99,7 +99,7 @@
       border: 1px solid #3facba;
       overflow: hidden;
 
-      .Fontsize {
+      .fontsize {
         font-size: 16px;
       }
     }

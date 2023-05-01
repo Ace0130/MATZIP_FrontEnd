@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./css/popularRestaurantsContainer.css";
+import MenuItem from "../../components/MenuItem";
 
 interface Image {
   large_cover_image: string;
@@ -37,12 +38,7 @@ const PopularRestaurantsContainer = () => {
           <label>인기 식당 메뉴</label>
           <div className="popularRestaurantsMenuContainer">
             {imgs.map((img, idx) => (
-              <img
-                key={idx.toString()}
-                className="popularRestaurantsMenuItem"
-                src={img.large_cover_image}
-                alt="사진"
-              />
+              <MenuItem key={idx} img={img} />
             ))}
           </div>
         </div>

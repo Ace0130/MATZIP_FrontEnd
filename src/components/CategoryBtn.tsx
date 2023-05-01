@@ -1,10 +1,10 @@
 import "./css/categoryBtn.css";
 
-interface ICategoryBtnProps {
+interface CategoryBtnProps {
   context: string;
 }
 
-const CategoryBtn = ({ context }: ICategoryBtnProps) => {
+const CategoryBtn = ({ context }: CategoryBtnProps) => {
   return (
     <div className="categoryBtn">
       <button>{context}</button>

@@ -1,4 +1,4 @@
-.todaysRecommendMenuBanner {
+.todaysRecommendBanner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
   height: 100%;
   margin-bottom: 90px;
 }
-.todaysRecommendMenuBanner label {
+.todaysRecommendBanner label {
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -15,13 +15,13 @@
   left: 100px;
   top: 60px;
 }
-.todaysRecommendMenuBanner img {
+.todaysRecommendBanner img {
   width: 100%;
   height: 500px;
   object-fit: cover;
   cursor: pointer;
 }
-.todaysRecommendMenuBanner .imgChangeBtnContainer {
+.todaysRecommendBanner .imgBtnContainer {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -29,7 +29,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.todaysRecommendMenuBanner .imgChangeBtnContainer button {
+.todaysRecommendBanner .imgBtnContainer button {
   background-color: lightgray;
   border: none;
   border-radius: 9999px;
@@ -38,7 +38,7 @@
   outline: none;
   cursor: pointer;
 }
-.todaysRecommendMenuBanner .imgChangeBtnContainer .enabled {
+.todaysRecommendBanner .imgBtnContainer .enabled {
   background-color: #5711c8;
 }
 

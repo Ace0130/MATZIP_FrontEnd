@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.Wrapper {
+.wrapper {
   height: 100%;
   width: 100%;
   /* flex-grow 적용하면 나머지 빈공간을 모두 채운다. */
@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
 }
-.Wrapper .GoTo {
+.wrapper .goTo {
   display: flex;
   justify-content: space-around;
   border: 1px;
@@ -17,7 +17,7 @@
   min-width: 300px;
   max-height: 700px;
 }
-.Wrapper .GoTo .ChangeBtn {
+.wrapper .goTo .changeBtn {
   display: block;
   width: 50%;
   height: 48px;
@@ -27,10 +27,10 @@
   border-radius: 8px 8px 0 0;
   border: 1px solid #3facba;
 }
-.Wrapper .GoTo .ChangeBtn .Fontsize {
+.wrapper .goTo .changeBtn .fontsize {
   font-size: 16px;
 }
-.Wrapper .GoTo .SignUpBtn {
+.wrapper .goTo .signUpBtn {
   display: block;
   width: 50%;
   height: 48px;
@@ -41,14 +41,13 @@
   border-radius: 8px 8px 0 0;
   border: 1px solid #3facba;
 }
-.Wrapper .GoTo .SignUpBtn a:hover p,
-.Wrapper .GoTo .SignUpBtn a:focus p {
+.wrapper .goTo .signUpBtn a:hover p, .wrapper .goTo .signUpBtn a:focus p {
   color: gray;
 }
-.Wrapper .GoTo .SignUpBtn .Fontsize {
+.wrapper .goTo .signUpBtn .fontsize {
   font-size: 16px;
 }
-.Wrapper > .LoginContainer {
+.wrapper .loginContainer {
   align-items: center;
   flex-direction: column;
   display: flex;
@@ -58,13 +57,13 @@
   min-width: 500px;
   max-height: 800px;
 }
-.Wrapper > .LoginContainer .input-t-m {
+.wrapper .loginContainer .input-t-m {
   margin-top: 30px;
 }
-.Wrapper > .LoginContainer .input-b-m {
+.wrapper .loginContainer .input-b-m {
   margin-bottom: 15px;
 }
-.Wrapper > .LoginContainer .loginInput {
+.wrapper .loginContainer .loginInput {
   position: relative;
   height: 40px;
   width: 400px;
@@ -72,14 +71,14 @@
   border-radius: 8px 8px 8px 8px;
   outline: none;
 }
-.Wrapper > .LoginContainer .inputIcon {
+.wrapper .loginContainer .inputIcon {
   position: absolute;
   width: 25px;
   height: 25px;
   top: 6px;
   left: 10px;
 }
-.Wrapper > .LoginContainer .LoginBtn {
+.wrapper .loginContainer .loginBtn {
   margin-bottom: 15px;
   display: block;
   width: 20%;
@@ -91,7 +90,7 @@
   border: 1px solid #3facba;
   overflow: hidden;
 }
-.Wrapper > .LoginContainer .LoginBtn .Fontsize {
+.wrapper .loginContainer .loginBtn .fontsize {
   font-size: 16px;
 }
 

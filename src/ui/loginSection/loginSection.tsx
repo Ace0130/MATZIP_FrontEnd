@@ -1,22 +1,21 @@
 import LabelInput from "../../components/LabelInput";
-import LoginChangeBtn from "../../components/LoginChangeBtn";
-import SignUpBtn from "../../components/SignUpBtn";
+import PageChangeBtn from "../../components/PageChangeBtn";
 import "./css/loginSection.css";
 
 const LoginSection = () => {
   return (
-    <div className="Wrapper">
-      <div className="GoTo">
-        <div className="ChangeBtn">
-          <LoginChangeBtn />
+    <div className="wrapper">
+      <div className="goTo">
+        <div className="changeBtn">
+          <PageChangeBtn state="login" id="loginChangeBtn" text="로그인" />
         </div>
 
-        <div className="SignUpBtn">
-          <SignUpBtn />
+        <div className="signUpBtn">
+          <PageChangeBtn state="signup" id="signupChangeBtn" text="회원가입" />
         </div>
       </div>
 
-      <div className="LoginContainer">
+      <div className="loginContainer">
         <div className="loginInput input-t-m">
           <img
             className="inputIcon"
@@ -41,7 +40,7 @@ const LoginSection = () => {
             placeHolder="비밀번호를 입력해주세요"
           />
         </div>
-        <div className="LoginBtn">
+        <div className="loginBtn">
           <input
             type="radio"
             placeholder="로그인"
@@ -49,7 +48,7 @@ const LoginSection = () => {
             id="Login"
             style={{ display: "none" }}
           ></input>
-          <label className="Fontsize" htmlFor="Login">
+          <label className="fontsize" htmlFor="Login">
             로그인
           </label>
         </div>

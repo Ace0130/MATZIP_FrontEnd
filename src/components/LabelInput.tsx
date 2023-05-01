@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import "./css/labelInput.css";
 
-interface ILabelInput {
+interface LabelInputProps {
   labelName: string;
   inputType?: string;
   placeHolder?: string;
@@ -13,7 +13,7 @@ const LabelInput = ({
   inputType = "text",
   placeHolder = "text",
   inputName = uuidv4(),
-}: ILabelInput) => {
+}: LabelInputProps) => {
   return (
     <div className="labelInput">
       <label htmlFor={inputName}>{[labelName]}</label>
