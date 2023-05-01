@@ -1,0 +1,21 @@
+.categoryBtn {
+  margin-right: 50px;
+}
+.categoryBtn button {
+  outline: none;
+  border: 2px solid rgb(149, 149, 149);
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(95, 95, 95);
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.categoryBtn button:hover {
+  border-color: #5711c8;
+  color: #5711c8;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=categoryBtn.css.map */

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.wrapper {
+  height: 100%;
+  width: 100%;
+  /* flex-grow 적용하면 나머지 빈공간을 모두 채운다. */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .goTo {
+  display: flex;
+  justify-content: space-around;
+  border: 1px;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+}
+.wrapper .goTo .changeBtn {
+  display: block;
+  width: 50%;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #3facba;
+}
+.wrapper .goTo .changeBtn .fontsize {
+  font-size: 16px;
+}
+.wrapper .goTo .signUpBtn {
+  display: block;
+  width: 50%;
+  height: 48px;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #3facba;
+}
+.wrapper .goTo .signUpBtn a:hover p, .wrapper .goTo .signUpBtn a:focus p {
+  color: gray;
+}
+.wrapper .goTo .signUpBtn .fontsize {
+  font-size: 16px;
+}
+.wrapper .loginContainer {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  border: 1px solid #3facba;
+  border-radius: 8px 8px 8px 8px;
+  max-width: 7000px;
+  min-width: 500px;
+  max-height: 800px;
+}
+.wrapper .loginContainer .input-t-m {
+  margin-top: 30px;
+}
+.wrapper .loginContainer .input-b-m {
+  margin-bottom: 15px;
+}
+.wrapper .loginContainer .loginInput {
+  position: relative;
+  height: 40px;
+  width: 400px;
+  border: 1px solid #3facba;
+  border-radius: 8px 8px 8px 8px;
+  outline: none;
+}
+.wrapper .loginContainer .inputIcon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 6px;
+  left: 10px;
+}
+.wrapper .loginContainer .loginBtn {
+  margin-bottom: 15px;
+  display: block;
+  width: 20%;
+  height: 16px;
+  padding: 13px 16px 14px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #3facba;
+  overflow: hidden;
+}
+.wrapper .loginContainer .loginBtn .fontsize {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=loginSection.css.map */
