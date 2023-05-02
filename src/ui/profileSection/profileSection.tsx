@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./css/profileSection.css";
 
 const ProfileSection = () => {
+  const [img, setImg] = useState<File | null>(null);
+  const [modifiedImg, setModifiedImg] = useState<File | null>(null);
   const [name, setName] = useState("yno1109");
   const [modifiedName, setModifiedName] = useState("");
   const [password, setPassword] = useState("1234");
@@ -15,15 +17,21 @@ const ProfileSection = () => {
 
   const toggleModal = () => {
     setModal((modal) => !modal);
+    setModifiedImg(img);
     setModifiedName(name);
     setModifiedPassword(password);
     setModifiedIntro(intro);
   };
 
   const clickModify = () => {
+    setImg(modifiedImg);
     setName(modifiedName);
     setPassword(modifiedPassword);
     setIntro(modifiedIntro);
+  };
+
+  const uploadImg = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setModifiedImg(event.target.files?.[0] ?? null);
   };
 
   useEffect(() => {
@@ -38,14 +46,17 @@ const ProfileSection = () => {
     };
   }, [modal]);
 
-  // TODO: 뒷 배경 blur처리하고 disabled, 스크롤바 업애는 처리..
+  // TODO: 비밀번호 수정 (버튼 누르면 모달 내용 바뀜) 기능 적용, 피그마 수정된 디자인 UI 반영
 
   return (
     <>
       <div className="profileSectionContainer">
         <div className="profileInfoContainer">
           <div className="profileBaseInfoContainer">
-            <img src="./images/profile.svg" alt="프로필" />
+            <img
+              src={img ? URL.createObjectURL(img) : "./images/profile.svg"}
+              alt="프로필"
+            />
             <div className="profileTextInfoContainer">
               <div className="profileInfoModifyContainer">
                 <span>{name}</span>
@@ -144,44 +155,61 @@ const ProfileSection = () => {
         <div className="profileModal">
           <div className="overlay" onClick={toggleModal}></div>
           <div className="modalContent">
-            <div className="profileContainer">
-              <input type="file" id="fileInput" accept="image/*" />
-              <label htmlFor="fileInput">
-                <img src="./images/profile.svg" alt="프로필" />
-              </label>
-              <span>{name}</span>
+            <div className="profileContent">
+              <div className="basicInfo">
+                <input
+                  type="file"
+                  id="fileInput"
+                  accept="image/*"
+                  onChange={uploadImg}
+                />
+                <label htmlFor="fileInput">
+                  <img
+                    src={
+                      modifiedImg
+                        ? URL.createObjectURL(modifiedImg)
+                        : "./images/profile.svg"
+                    }
+                    alt="프로필"
+                  />
+                </label>
+                <span>{name}</span>
+              </div>
+              <div className="detailInfo">
+                <div className="profileInputContainer">
+                  <label>닉네임</label>
+                  <input
+                    type="text"
+                    value={modifiedName}
+                    onChange={(event) => setModifiedName(event.target.value)}
+                  />
+                </div>
+                <div className="profileInputContainer">
+                  <label>비밀번호</label>
+                  <input
+                    type="password"
+                    value={modifiedPassword}
+                    onChange={(event) =>
+                      setModifiedPassword(event.target.value)
+                    }
+                    disabled
+                  />
+                  <button>수정</button>
+                </div>
+                <div className="profileInputContainer">
+                  <label>소개</label>
+                  <textarea
+                    cols={30}
+                    rows={3}
+                    value={modifiedIntro}
+                    onChange={(event) => setModifiedIntro(event.target.value)}
+                  />
+                </div>
+              </div>
             </div>
-            <div className="profileModifyContainer">
-              <div className="profileInputContainer">
-                <label>닉네임</label>
-                <input
-                  type="text"
-                  value={modifiedName}
-                  onChange={(event) => setModifiedName(event.target.value)}
-                />
-              </div>
-              <div className="profileInputContainer">
-                <label>비밀번호</label>
-                <input
-                  type="password"
-                  value={modifiedPassword}
-                  onChange={(event) => setModifiedPassword(event.target.value)}
-                  disabled
-                />
-              </div>
-              <div className="profileInputContainer">
-                <label>소개</label>
-                <textarea
-                  cols={30}
-                  rows={3}
-                  value={modifiedIntro}
-                  onChange={(event) => setModifiedIntro(event.target.value)}
-                />
-              </div>
-              <div className="modifyBtnContainer">
-                <button onClick={clickModify}>수정</button>
-                <button onClick={toggleModal}>닫기</button>
-              </div>
+            <div className="btnContainer">
+              <button onClick={clickModify}>수정</button>
+              <button onClick={toggleModal}>닫기</button>
             </div>
           </div>
         </div>

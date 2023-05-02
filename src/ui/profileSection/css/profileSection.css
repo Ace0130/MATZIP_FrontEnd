@@ -12,8 +12,11 @@
   display: flex;
   align-items: center;
 }
-.profileSectionContainer .profileInfoContainer .profileBaseInfoContainer svg {
-  margin-right: 10px;
+.profileSectionContainer .profileInfoContainer .profileBaseInfoContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 50px;
 }
 .profileSectionContainer .profileInfoContainer .profileBaseInfoContainer .profileTextInfoContainer {
   display: flex;
@@ -115,59 +118,62 @@
   transform: translate(-50%, -50%);
   z-index: 3;
   display: flex;
+  flex-direction: column;
   border: 1px solid #8d3ecb;
   border-radius: 10px;
-  padding: 60px 80px;
+  padding: 60px 100px;
 }
-.profileModal .modalContent .profileContainer,
-.overlay .modalContent .profileContainer {
+.profileModal .modalContent .profileContent .basicInfo,
+.overlay .modalContent .profileContent .basicInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 40px;
+  margin-bottom: 40px;
 }
-.profileModal .modalContent .profileContainer input,
-.overlay .modalContent .profileContainer input {
+.profileModal .modalContent .profileContent .basicInfo input,
+.overlay .modalContent .profileContent .basicInfo input {
   display: none;
 }
-.profileModal .modalContent .profileContainer img,
-.overlay .modalContent .profileContainer img {
+.profileModal .modalContent .profileContent .basicInfo img,
+.overlay .modalContent .profileContent .basicInfo img {
+  border-radius: 50%;
   width: 200px;
+  height: 200px;
 }
-.profileModal .modalContent .profileModifyContainer,
-.overlay .modalContent .profileModifyContainer {
+.profileModal .modalContent .profileContent .detailInfo,
+.overlay .modalContent .profileContent .detailInfo {
   display: flex;
   flex-direction: column;
 }
-.profileModal .modalContent .profileModifyContainer .profileInputContainer,
-.overlay .modalContent .profileModifyContainer .profileInputContainer {
+.profileModal .modalContent .profileContent .detailInfo .profileInputContainer,
+.overlay .modalContent .profileContent .detailInfo .profileInputContainer {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.profileModal .modalContent .profileModifyContainer .profileInputContainer label,
-.overlay .modalContent .profileModifyContainer .profileInputContainer label {
+.profileModal .modalContent .profileContent .detailInfo .profileInputContainer label,
+.overlay .modalContent .profileContent .detailInfo .profileInputContainer label {
   font-size: 16px;
   margin-bottom: 3px;
 }
-.profileModal .modalContent .profileModifyContainer .profileInputContainer input,
-.profileModal .modalContent .profileModifyContainer .profileInputContainer textarea,
-.overlay .modalContent .profileModifyContainer .profileInputContainer input,
-.overlay .modalContent .profileModifyContainer .profileInputContainer textarea {
+.profileModal .modalContent .profileContent .detailInfo .profileInputContainer input,
+.profileModal .modalContent .profileContent .detailInfo .profileInputContainer textarea,
+.overlay .modalContent .profileContent .detailInfo .profileInputContainer input,
+.overlay .modalContent .profileContent .detailInfo .profileInputContainer textarea {
   border: 1px solid lightgray;
   outline: none;
   border-radius: 2px;
   font-size: 16px;
   padding: 3px 6px;
 }
-.profileModal .modalContent .profileModifyContainer .modifyBtnContainer,
-.overlay .modalContent .profileModifyContainer .modifyBtnContainer {
+.profileModal .modalContent .btnContainer,
+.overlay .modalContent .btnContainer {
   display: flex;
   justify-content: flex-end;
   margin-top: 40px;
 }
-.profileModal .modalContent .profileModifyContainer .modifyBtnContainer button,
-.overlay .modalContent .profileModifyContainer .modifyBtnContainer button {
+.profileModal .modalContent .btnContainer button,
+.overlay .modalContent .btnContainer button {
   margin-left: 10px;
   border: none;
   outline: none;
