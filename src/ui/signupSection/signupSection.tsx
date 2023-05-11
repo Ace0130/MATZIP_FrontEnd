@@ -30,7 +30,7 @@ const SignUpSection = () => {
           pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
           placeHolder="전화번호를 입력해주세요"
         />
-        <button className="sBtn">로그인</button>
+        <button className="sBtn">회원가입</button>
         <a href="" className="findPw">
           비밀번호를 잃어버리셨나요?
         </a>
