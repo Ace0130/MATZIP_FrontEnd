@@ -139,17 +139,30 @@
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  margin-bottom: 10px;
 }
 .profileModal .modalContent .profileContent .detailInfo,
 .overlay .modalContent .profileContent .detailInfo {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 .profileModal .modalContent .profileContent .detailInfo .profileInputContainer,
 .overlay .modalContent .profileContent .detailInfo .profileInputContainer {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+.profileModal .modalContent .profileContent .detailInfo .profileInputContainer button,
+.overlay .modalContent .profileContent .detailInfo .profileInputContainer button {
+  background-color: #8d3ecb;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
 }
 .profileModal .modalContent .profileContent .detailInfo .profileInputContainer label,
 .overlay .modalContent .profileContent .detailInfo .profileInputContainer label {
@@ -192,6 +205,13 @@
 
 .noScroll {
   overflow: hidden;
+}
+
+.passwordContent {
+  width: 273px;
+  height: 602px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=profileSection.css.map */

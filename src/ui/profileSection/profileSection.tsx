@@ -14,9 +14,11 @@ const ProfileSection = () => {
   const [modifiedIntro, setModifiedIntro] = useState("");
   const [value, setValue] = useState(1);
   const [modal, setModal] = useState(false);
+  const [changedModal, setChangedModal] = useState(false);
 
   const toggleModal = () => {
     setModal((modal) => !modal);
+    setChangedModal(false);
     setModifiedImg(img);
     setModifiedName(name);
     setModifiedPassword(password);
@@ -28,6 +30,10 @@ const ProfileSection = () => {
     setName(modifiedName);
     setPassword(modifiedPassword);
     setIntro(modifiedIntro);
+  };
+
+  const modifyPassword = () => {
+    setChangedModal(true);
   };
 
   const uploadImg = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -155,62 +161,96 @@ const ProfileSection = () => {
         <div className="profileModal">
           <div className="overlay" onClick={toggleModal}></div>
           <div className="modalContent">
-            <div className="profileContent">
-              <div className="basicInfo">
-                <input
-                  type="file"
-                  id="fileInput"
-                  accept="image/*"
-                  onChange={uploadImg}
-                />
-                <label htmlFor="fileInput">
-                  <img
-                    src={
-                      modifiedImg
-                        ? URL.createObjectURL(modifiedImg)
-                        : "./images/profile.svg"
-                    }
-                    alt="프로필"
-                  />
-                </label>
-                <span>{name}</span>
+            {!changedModal ? (
+              <div className="passwordContent">
+                <div className="profileContent">
+                  <div className="basicInfo">
+                    <input
+                      type="file"
+                      id="fileInput"
+                      accept="image/*"
+                      onChange={uploadImg}
+                    />
+                    <label htmlFor="fileInput">
+                      <img
+                        src={
+                          modifiedImg
+                            ? URL.createObjectURL(modifiedImg)
+                            : "./images/profile.svg"
+                        }
+                        alt="프로필"
+                      />
+                    </label>
+                    <span>{name}</span>
+                  </div>
+                  <div className="detailInfo">
+                    <div className="profileInputContainer">
+                      <label>닉네임</label>
+                      <input
+                        type="text"
+                        value={modifiedName}
+                        onChange={(event) =>
+                          setModifiedName(event.target.value)
+                        }
+                      />
+                    </div>
+                    <div className="profileInputContainer">
+                      <label>비밀번호</label>
+                      <input
+                        type="password"
+                        value={modifiedPassword}
+                        onChange={(event) =>
+                          setModifiedPassword(event.target.value)
+                        }
+                        disabled
+                      />
+                      <button onClick={modifyPassword}>비밀번호 수정</button>
+                    </div>
+                    <div className="profileInputContainer">
+                      <label>소개</label>
+                      <textarea
+                        cols={30}
+                        rows={3}
+                        value={modifiedIntro}
+                        onChange={(event) =>
+                          setModifiedIntro(event.target.value)
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="btnContainer">
+                  <button onClick={clickModify}>수정</button>
+                  <button onClick={toggleModal}>닫기</button>
+                </div>
               </div>
-              <div className="detailInfo">
-                <div className="profileInputContainer">
-                  <label>닉네임</label>
-                  <input
-                    type="text"
-                    value={modifiedName}
-                    onChange={(event) => setModifiedName(event.target.value)}
-                  />
-                </div>
-                <div className="profileInputContainer">
-                  <label>비밀번호</label>
-                  <input
-                    type="password"
-                    value={modifiedPassword}
-                    onChange={(event) =>
-                      setModifiedPassword(event.target.value)
-                    }
-                    disabled
-                  />
-                  <button>수정</button>
-                </div>
-                <div className="profileInputContainer">
-                  <label>소개</label>
-                  <textarea
-                    cols={30}
-                    rows={3}
-                    value={modifiedIntro}
-                    onChange={(event) => setModifiedIntro(event.target.value)}
-                  />
+            ) : (
+              <div className="profileContent">
+                <div className="passwordContent">
+                  <div className="detailInfo">
+                    <h1>비밀번호 수정</h1>
+                    <div>
+                      <div className="profileInputContainer">
+                        <label>현재 비밀번호</label>
+                        <input type="password" />
+                      </div>
+                      <div className="profileInputContainer">
+                        <label>새 비밀번호</label>
+                        <input type="password" />
+                      </div>
+                      <div className="profileInputContainer">
+                        <label>비밀번호 확인</label>
+                        <input type="password" />
+                      </div>
+                    </div>
+                    <div className="btnContainer">
+                      <button onClick={clickModify}>수정</button>
+                      <button onClick={toggleModal}>닫기</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="btnContainer">
-              <button onClick={clickModify}>수정</button>
-              <button onClick={toggleModal}>닫기</button>
-            </div>
+            )}
           </div>
         </div>
       ) : null}

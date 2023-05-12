@@ -160,16 +160,30 @@ $theme-color: #8d3ecb;
           border-radius: 50%;
           width: 200px;
           height: 200px;
+          margin-bottom: 10px;
         }
       }
 
       .detailInfo {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
         .profileInputContainer {
           display: flex;
           flex-direction: column;
           margin-bottom: 10px;
+
+          button {
+            background-color: $theme-color;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 300;
+            color: white;
+            cursor: pointer;
+          }
+
           label {
             font-size: 16px;
             margin-bottom: 3px;
@@ -186,6 +200,7 @@ $theme-color: #8d3ecb;
         }
       }
     }
+
     .btnContainer {
       display: flex;
       justify-content: flex-end;
@@ -213,4 +228,11 @@ $theme-color: #8d3ecb;
 
 .noScroll {
   overflow: hidden;
+}
+
+.passwordContent {
+  width: 273px;
+  height: 602px;
+  display: flex;
+  flex-direction: column;
 }
