@@ -6,6 +6,8 @@ interface LabelInputProps {
   inputType?: string;
   placeHolder?: string;
   inputName?: any;
+  pattern?: string;
+  required?: boolean;
 }
 
 const LabelInput = ({
@@ -13,6 +15,8 @@ const LabelInput = ({
   inputType = "text",
   placeHolder = "text",
   inputName = uuidv4(),
+  pattern,
+  required = true,
 }: LabelInputProps) => {
   return (
     <div className="labelInput">
@@ -21,6 +25,8 @@ const LabelInput = ({
         type={inputType}
         name={inputName}
         placeholder={placeHolder}
+        pattern={pattern}
+        required={required}
       ></input>
     </div>
   );
