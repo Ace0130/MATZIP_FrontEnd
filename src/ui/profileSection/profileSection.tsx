@@ -16,15 +16,6 @@ const ProfileSection = () => {
   const [modal, setModal] = useState(false);
   const [changedModal, setChangedModal] = useState(false);
 
-  const toggleModal = () => {
-    setModal((modal) => !modal);
-    setChangedModal(false);
-    setModifiedImg(img);
-    setModifiedName(name);
-    setModifiedPassword(password);
-    setModifiedIntro(intro);
-  };
-
   const clickModify = () => {
     setImg(modifiedImg);
     setName(modifiedName);
@@ -38,6 +29,15 @@ const ProfileSection = () => {
 
   const uploadImg = (event: React.ChangeEvent<HTMLInputElement>) => {
     setModifiedImg(event.target.files?.[0] ?? null);
+  };
+
+  const toggleModal = () => {
+    setModal((modal) => !modal);
+    setChangedModal(false);
+    setModifiedImg(img);
+    setModifiedName(name);
+    setModifiedPassword(password);
+    setModifiedIntro(intro);
   };
 
   useEffect(() => {
@@ -111,48 +111,7 @@ const ProfileSection = () => {
           </button>
         </div>
         <div className="tabContainer">
-          <div className={value === 1 ? "selectedTab" : undefined}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto
-            sapiente! Veritatis nulla quas laudantium obcaecati. Dolore odio,
-            earum dolorem atque, excepturi vero modi fuga deserunt nisi sequi
-            suscipit alias. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Sunt, iusto sapiente! Veritatis nulla quas laudantium
-            obcaecati. Dolore odio, earum dolorem atque, excepturi vero modi
-            fuga deserunt nisi sequi suscipit alias. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sunt, iusto sapiente! Veritatis nulla
-            quas laudantium obcaecati. Dolore odio, earum dolorem atque,
-            excepturi vero modi fuga deserunt nisi sequi suscipit alias. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto
-            sapiente! Veritatis nulla quas laudantium obcaecati. Dolore odio,
-            earum dolorem atque, excepturi vero modi fuga deserunt nisi sequi
-            suscipit alias.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Sunt, iusto sapiente! Veritatis nulla quas laudantium
-            obcaecati. Dolore odio, earum dolorem atque, excepturi vero modi
-            fuga deserunt nisi sequi suscipit alias.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sunt, iusto sapiente! Veritatis nulla
-            quas laudantium obcaecati. Dolore odio, earum dolorem atque,
-            excepturi vero modi fuga deserunt nisi sequi suscipit alias.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto
-            sapiente! Veritatis nulla quas laudantium obcaecati. Dolore odio,
-            earum dolorem atque, excepturi vero modi fuga deserunt nisi sequi
-            suscipit alias.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Sunt, iusto sapiente! Veritatis nulla quas laudantium
-            obcaecati. Dolore odio, earum dolorem atque, excepturi vero modi
-            fuga deserunt nisi sequi suscipit alias.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sunt, iusto sapiente! Veritatis nulla
-            quas laudantium obcaecati. Dolore odio, earum dolorem atque,
-            excepturi vero modi fuga deserunt nisi sequi suscipit alias.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto
-            sapiente! Veritatis nulla quas laudantium obcaecati. Dolore odio,
-            earum dolorem atque, excepturi vero modi fuga deserunt nisi sequi
-            suscipit alias.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Sunt, iusto sapiente! Veritatis nulla quas laudantium
-            obcaecati. Dolore odio, earum dolorem atque, excepturi vero modi
-            fuga deserunt nisi sequi suscipit alias.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sunt, iusto sapiente! Veritatis nulla
-            quas laudantium obcaecati. Dolore odio, earum dolorem atque,
-            excepturi vero modi fuga deserunt nisi sequi suscipit alias.
-          </div>
+          <div className={value === 1 ? "selectedTab" : undefined}></div>
           <div className={value === 2 ? "selectedTab" : undefined}>2</div>
           <div className={value === 3 ? "selectedTab" : undefined}>3</div>
         </div>
