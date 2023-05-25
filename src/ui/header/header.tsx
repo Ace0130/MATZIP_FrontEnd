@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Logo from "../../components/Logo";
+import Dropdown from "../../components/dropdown/dropdown";
 import "./header.css";
 
 const Header = () => {
@@ -21,11 +22,6 @@ const Header = () => {
         />
         <button>
           <img src="./images/search.svg" alt="아이콘" />
-        </button>
-      </div>
-      <div className="btnContainer">
-        <button className="loginBtn" onClick={clickLoginBtn}>
-          로그인
         </button>
       </div>
     </div>

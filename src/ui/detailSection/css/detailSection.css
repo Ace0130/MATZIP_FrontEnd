@@ -1,0 +1,45 @@
+.dWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgZone {
+  display: flex;
+  width: 98%;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #8d3ecb;
+  border-radius: 8px 8px 8px 8px;
+}
+.mWrapper {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.dMenu {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #8d3ecb;
+  border-radius: 8px 8px 8px 8px;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  border-radius: 8px 8px 8px 8px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 20px;
+}
+button:focus {
+  outline: none !important;
+  border: 2px solid #8d3ecb;
+}
+/*# sourceMappingURL=detailSection.css.map */

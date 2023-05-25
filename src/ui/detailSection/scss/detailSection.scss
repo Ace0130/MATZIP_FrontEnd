@@ -1,0 +1,32 @@
+.dWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.imgZone {
+  display: flex;
+  width: 98%;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #8d3ecb;
+  border-radius: 8px 8px 8px 8px;
+}
+.dMenu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #8d3ecb;
+  border-radius: 8px 8px 8px 8px;
+}
+.bar {
+  display: flex;
+  height: 50px;
+}
+button {
+  border: 1px solid #8d3ecb;
+  border-radius: 8px 8px 8px 8px;
+  width: 100px;
+  text-align: center;
+}
