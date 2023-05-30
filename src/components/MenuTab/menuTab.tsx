@@ -22,30 +22,25 @@ function MenuTab() {
     <div className="wrap">
       <div className="menuBar">
         <ul className="tabs">
-          <div className="infoBtn">
-            <div
-              className={`${menu === "Info" ? "active" : ""}`}
-              onClick={() => changeMenu("Info")}
-            >
-              <button>Info</button>
-            </div>
+          <div
+            className={`${menu === "Info" ? "active" : ""}`}
+            onClick={() => changeMenu("Info")}
+          >
+            <button>Info</button>
           </div>
 
-          <div className="menuBtn">
-            <div
-              className={`${menu === "Menu" ? "active" : ""}`}
-              onClick={() => changeMenu("Menu")}
-            >
-              <button>Menu</button>
-            </div>
+          <div
+            className={`${menu === "Menu" ? "active" : ""}`}
+            onClick={() => changeMenu("Menu")}
+          >
+            <button>Menu</button>
           </div>
-          <div className="reviewBtn">
-            <div
-              className={`${menu === "Review" ? "active" : ""}`}
-              onClick={() => changeMenu("Review")}
-            >
-              <button>Review</button>
-            </div>
+
+          <div
+            className={`${menu === "Review" ? "active" : ""}`}
+            onClick={() => changeMenu("Review")}
+          >
+            <button>Review</button>
           </div>
         </ul>
       </div>

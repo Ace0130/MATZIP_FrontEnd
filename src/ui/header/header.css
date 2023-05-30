@@ -39,28 +39,12 @@
 .header .searchBar:focus-within {
   border-color: #5711c8;
 }
-.header .dropdown {
+.header .btnContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid gray;
-  border-radius: 25px 25px 25px 25px;
-  height: 45px;
-  width: 80px;
 }
-.header .dropdown .menubar {
-  color: rgb(148, 158, 168);
-  width: 20px;
-  height: 25px;
-  margin-left: 10px;
-}
-.header .dropdown .profile {
-  color: rgb(148, 158, 168);
-  width: 32px;
-  height: 50px;
-  margin-right: 8px;
-}
-.header .dropdown .loginBtn {
+.header .btnContainer .loginBtn {
   background-color: white;
   border: none;
   outline: none;
@@ -70,7 +54,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-.header .dropdown .loginBtn:hover {
+.header .btnContainer .loginBtn:hover {
   color: #5711c8;
 }
 

@@ -14,7 +14,6 @@ const DetailSection = () => {
       <div className="mWrapper">
         <Menutab />
       </div>
-      <div className="dMenu"></div>
     </div>
   );
 };

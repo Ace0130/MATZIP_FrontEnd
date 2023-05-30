@@ -1,0 +1,11 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+}
+
+.tabs {
+  display: flex;
+}
+
+/*# sourceMappingURL=menuTab.css.map */

@@ -3,4 +3,8 @@
   flex-direction: column;
 }
 
+.tabs {
+  display: flex;
+}
+
 /*# sourceMappingURL=menuTab.css.map */

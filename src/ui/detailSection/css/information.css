@@ -1,0 +1,25 @@
+.infoSection {
+  display: flex;
+  border: 1px solid #8d3ecb;
+  border-radius: 8px 8px 8px 8px;
+  width: 1660px;
+  height: 500px;
+}
+
+.storeInfo {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.map {
+  display: flex;
+  width: 150px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=information.css.map */
